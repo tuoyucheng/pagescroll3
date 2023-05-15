@@ -1,0 +1,61 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.zoomin {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.zoomin img {
+  transform: scale(1.0);
+  transition: .3s ease-in-out;
+}
+
+.zoomin a:hover img {
+  transform: scale(1.5);
+}
+
+.zoomin {
+  transform: scale(1.0);
+  transition: .3s ease-in-out;
+}
+
+.zoomin:hover {
+  transform: scale(0.8);
+}
+
+.box {
+  border: solid 2px black;
+  height: 300px;
+  position: relative;
+}
+
+.target {
+  opacity: 0;
+  transition: .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.space {
+  margin-top: 200px;
+}
+
+.show {
+  opacity: 1;
+  margin-top: 0;
+  padding-top: 100px;
+}
